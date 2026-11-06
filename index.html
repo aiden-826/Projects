@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiden's Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #10121a;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #999eae;
+            margin-bottom: 35px;
+        }
+
+        .projects {
+            display: grid;
+            gap: 18px;
+        }
+
+        .project {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: #1c2030;
+            border: 1px solid #30364a;
+            border-radius: 14px;
+            padding: 25px;
+            text-align: left;
+            transition: 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            background: #292f43;
+            border-color: #7188ff;
+        }
+
+        .project h2 {
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+
+        .project p {
+            color: #aab0c2;
+            font-size: 14px;
+        }
+
+        .arrow {
+            float: right;
+            color: #8195ff;
+            font-size: 22px;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #777e91;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Aiden's Projects</h1>
+        <p class="subtitle">My collection of websites and projects</p>
+
+        <div class="projects">
+
+            <a class="project"
+               href="https://aiden-826.github.io/cwctrack"
+               target="_blank">
+                <span class="arrow">↗</span>
+                <h2>CWCTrack</h2>
+                <p>Open the CWCTrack website.</p>
+            </a>
+
+            <a class="project"
+               href="https://aiden-826.github.io/Polytrack-Archive/"
+               target="_blank">
+                <span class="arrow">↗</span>
+                <h2>Polytrack Archives</h2>
+                <p>Explore the Polytrack Archive website.</p>
+            </a>
+
+        </div>
+
+        <footer>
+            © 2026 Aiden's Projects
+        </footer>
+
+    </div>
+
+</body>
+</html>
