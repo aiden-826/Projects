@@ -4,120 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aiden's Projects</title>
-
+    <title>AA's Projects</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background: #10121a;
+            background: #111827;
             color: white;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 30px;
         }
 
         .container {
-            width: 100%;
-            max-width: 650px;
+            width: 90%;
+            max-width: 800px;
             text-align: center;
         }
 
         h1 {
-            font-size: 38px;
+            font-size: 36px;
             margin-bottom: 10px;
         }
 
         .subtitle {
-            color: #999eae;
+            color: #9ca3af;
             margin-bottom: 35px;
         }
 
         .projects {
             display: grid;
-            gap: 18px;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 20px;
         }
 
         .project {
-            display: block;
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 15px;
+            padding: 30px 20px;
             text-decoration: none;
             color: white;
-            background: #1c2030;
-            border: 1px solid #30364a;
-            border-radius: 14px;
-            padding: 25px;
-            text-align: left;
-            transition: 0.2s ease;
+            transition: 0.2s;
         }
 
         .project:hover {
-            transform: translateY(-5px);
-            background: #292f43;
-            border-color: #7188ff;
+            transform: translateY(-6px);
+            background: #374151;
+            border-color: #60a5fa;
         }
 
         .project h2 {
-            font-size: 23px;
-            margin-bottom: 8px;
+            margin-top: 0;
+            color: #60a5fa;
         }
 
         .project p {
-            color: #aab0c2;
-            font-size: 14px;
+            color: #d1d5db;
         }
 
-        .arrow {
-            float: right;
-            color: #8195ff;
-            font-size: 22px;
+        .open {
+            display: inline-block;
+            margin-top: 15px;
+            background: #2563eb;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
         }
 
         footer {
-            margin-top: 35px;
-            color: #777e91;
+            margin-top: 40px;
+            color: #6b7280;
             font-size: 13px;
         }
     </style>
 </head>
-
 <body>
 
     <div class="container">
-
-        <h1>Aiden's Projects</h1>
-        <p class="subtitle">My collection of websites and projects</p>
+        <h1>My Projects</h1>
+        <p class="subtitle">Welcome to my project launcher.</p>
 
         <div class="projects">
 
             <a class="project"
-               href="https://aiden-826.github.io/cwctrack"
+               href="https://aiden-826.github.io/cwctrack/"
                target="_blank">
-                <span class="arrow">↗</span>
                 <h2>CWCTrack</h2>
                 <p>Open the CWCTrack website.</p>
+                <span class="open">Open Project ↗</span>
             </a>
 
             <a class="project"
                href="https://aiden-826.github.io/PolyTrack-Archive/"
                target="_blank">
-                <span class="arrow">↗</span>
-                <h2>Polytrack Archives</h2>
-                <p>Explore the Polytrack Archive website.</p>
+                <h2>Archives</h2>
+                <p>Explore the PolyTrack Archive.</p>
+                <span class="open">Open Project ↗</span>
             </a>
 
         </div>
 
         <footer>
-            © 2026 Aiden's Projects
+            AA's Projects
         </footer>
-
     </div>
 
 </body>
